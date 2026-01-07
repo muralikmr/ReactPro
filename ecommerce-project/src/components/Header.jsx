@@ -1,7 +1,14 @@
 import React from 'react'
 import '../components/header.css'
 import { Link } from 'react-router'
-const Header = ( ) => {
+const Header = ({ cart ,loadcart}) => {
+  // Use optional chaining and reduce for cleaner code
+  const totalQuantity = cart?.reduce((total, cartItem) => {
+    return total + (cartItem.quantity || 0);
+    loadcart();
+  }, 0) || 0;
+
+
  
   return (
         <div className="header">
@@ -30,7 +37,7 @@ const Header = ( ) => {
 
         <Link className="cart-link header-link"  to="/checkout">
           <img className="cart-icon" src="images/icons/cart-icon.png" />
-          <div className="cart-quantity">3</div>
+          <div className="cart-quantity">{totalQuantity}</div>
           <div className="cart-text">Cart</div>
         </Link>
       </div>

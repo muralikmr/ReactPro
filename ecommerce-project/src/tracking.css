@@ -1,0 +1,101 @@
+.tracking-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  margin-top: 100px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tracking-header {
+  background: #2f3a40;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 6px 6px 0 0;
+}
+
+.tracking-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.tracking-steps {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px 40px;
+  margin-left: 80px;
+  overflow-x: auto;
+}
+
+.step-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.step-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.step-circle.active {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.step-line {
+  width: 120px;
+  height: 3px;
+  background: #e5e5e5;
+  margin: 0 10px;
+}
+
+.step-line.active {
+  background: #1da1f2;
+}
+
+.step-label {
+  position: absolute;
+  top: 70px;
+  width: 120px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  left: -35px;
+}
+.tracking-product {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  align-items: center;
+  justify-content: center;
+}
+
+.tracking-product-image {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.tracking-product-details h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.tracking-product-details p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #555;
+}
